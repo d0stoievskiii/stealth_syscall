@@ -1,6 +1,7 @@
 Walks the PEB, finds the loaded modules linked list, gets the address of the module you're after,
 then walks the module looking for the routine you want, reads the syscall index from routine address,
-and forces a syscall by allocating your custom syscall wrapper. Its only useful to avoid usermode hooks on syscall wrappers
+and forces a syscall by allocating your custom syscall wrapper. Its only useful to avoid usermode hooks on syscall wrappers.
+Header only lib.
 
 
 example usage:
