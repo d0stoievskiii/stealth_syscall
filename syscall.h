@@ -175,7 +175,6 @@ namespace syscall {
             if (!strcmp(curr, routine)) {
                 return *reinterpret_cast<uint32_t*>((moduleBase + addressFuncs[addressNamesOrdinal[i]]) + 4);
             }
-            //the index of the syscall(a int) happens to be the last 32 bits of the address of the function
         }
 
         return 0;
